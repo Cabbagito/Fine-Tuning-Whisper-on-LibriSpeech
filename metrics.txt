@@ -1,7 +1,7 @@
 Word Error Rate of Whisper Large-v2, Whisper-small-en and the fine-tuned Whisper-small-en on the test set of LibriSpeech.
 The target text is not capitalized and doesn't contain punctuation symbols, whereas the outputs of the pre-trained models contain these things.
 This is why there are two metrics for each model. A unprocessed metric, where the target text was compared to the raw generated text(without special tokens), 
-and a processed text, where the output of the model was lowercased and the punctuation symbols that do not affect the meaning of words.
+and a processed metric, where the output of the model was lowercased and the punctuation symbols that do not affect the meaning of words were removed.
 Also, because of the time it takes for the Large-v2 model to generate it's output, it was evaluated on only 500 examples from the test set(out of ~2500).
 
 
